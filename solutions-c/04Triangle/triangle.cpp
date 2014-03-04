@@ -3,9 +3,9 @@
 
 int main(int argc, char *argv[]){
 
-	int tamaño = atoi(argv[1]);
+	int tamano = atoi(argv[1]);
 	
-	for(int fila=0;fila<=tamaño;fila++){
+	for(int fila=0;fila<=tamano;fila++){
 		for(int col=0;col<=fila;col++){
 			if(fila>col)
 				printf("%c", *argv[2]);

@@ -2,16 +2,16 @@
 #include <stdlib.h>
 
 int main(){
-	int tamaño=0;
+	int tamano=0;
 	const char *list[] = {
 		"bread",
 		"toast",
 		"bacon"
 	};
 
-	tamaño = sizeof(list)/sizeof(char *);
+	tamano = sizeof(list)/sizeof(char *);
 
-	for(int i=0;i<tamaño;i++){
+	for(int i=0;i<tamano;i++){
 		printf("%s", list[i]);
 		printf("\n");
 	}

@@ -9,7 +9,7 @@ int main(int argc, char *argv[]){
 
 	float numero1 = atof(argv[1]), numero2 = atof(argv[2]);
 
-	printf("El resultado es: %.2f .", add(numero1, numero2);
+	printf("El resultado es: %.2f .", add(numero1, numero2));
 
 	return EXIT_SUCCESS;
 }
