@@ -2,16 +2,16 @@
 #include <stdlib.h>
 #include <math.h>
 
-#define N 10
+#define N 0x10
 
-int power(double base, int exponent){
+double power(double base, int exponent){
 	if(base == 1)
 		return 1;
 	else
 		return pow(base, exponent);
 }
 
-int fill_in(int list[N],int exponent){
+int fill_in(double list[N],int exponent){
 
 	for(int i=0;i<N;i++)
 		list[i] = power(i+1, exponent);
@@ -19,7 +19,7 @@ int fill_in(int list[N],int exponent){
 
 int main(int argc, char* argv[]){
 
-	int list[N];
+	double list[N];
 	int exponent = atoi(argv[1]);
 
 	for(int i=0;i<N;i++)
@@ -28,7 +28,9 @@ int main(int argc, char* argv[]){
 	fill_in(list, exponent);
 
 	for(int j=0;j<N;j++)
-		printf("%.2f",list[j]);
+		printf(" %.0f ",list[j]);
+
+	printf("\n");
 
 	return EXIT_SUCCESS;
 }
